@@ -17,7 +17,7 @@ def remove_non_ascii(text):
 
 
 # You tube data harvestiing
-api_key = 'AIzaSyA7nX0_rpeuPcmEuJnXsr76nzudF1UUcaU'
+api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #Provide API key
 from googleapiclient.discovery import build
 
 main_data = []
@@ -25,7 +25,7 @@ main_data = []
 
 def channels(channel_ids):
     for channel_id in channel_ids:
-        api_key = 'AIzaSyA7nX0_rpeuPcmEuJnXsr76nzudF1UUcaU'
+        api_key = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' #Provide API key
         youtube = build('youtube', 'v3', developerKey=api_key)
         request = youtube.channels().list(
             part="snippet,contentDetails,statistics,status,topicDetails",
